@@ -1,66 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safe Space</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>SafeSpace</title>
+    <style>
+        :root {
+            --primary-color: purple;
+            --background-color: #121212;
+            --text-color: #e0e0e0;
+            /* other CSS variables */
+        }
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            /* additional styling */
+        }
+        /* Dark theme styles */
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Safe Space</h1>
-        <nav>
-            <ul>
-                <li><a href="#authentication">Login/Signup</a></li>
-                <li><a href="#chat">Chat with AI</a></li>
-                <li><a href="#exercises">Breathing Exercises</a></li>
-                <li><a href="#ambientsounds">Ambient Sounds</a></li>
-                <li><a href="#diary">Diary</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="authentication">
-        <h2>Authentication</h2>
-        <form action="#" method="POST">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Login</button>
-        </form>
-    </section>
-
-    <section id="chat">
-        <h2>Chat Interface</h2>
-        <div id="chatbox"></div>
-        <textarea id="userInput" placeholder="Type your message here..."></textarea>
-        <button id="sendBtn">Send</button>
-    </section>
-
-    <section id="exercises">
-        <h2>Breathing Exercises</h2>
-        <p>Follow along to help relax.</p>
-        <button id="breatheBtn">Start Breathing Exercise</button>
-    </section>
-
-    <section id="ambientsounds">
-        <h2>Ambient Sounds</h2>
-        <button id="playSound">Play Sounds</button>
-    </section>
-
-    <section id="diary">
-        <h2>Your Diary</h2>
-        <textarea id="diaryInput" placeholder="Write your thoughts here..."></textarea>
-        <button id="saveDiary">Save</button>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Safe Space, Inc.</p>
-        <div>
-            <button id="switchLang">Switch to Bilingual</button>
-        </div>
-    </footer>
-    <script src="app.js"></script>
+    <div id="sidebar">
+        <button id="chatTab">Chats</button>
+        <button id="diaryTab">Diary</button>
+    </div>
+    <div id="content">
+        <!-- Chat functionality -->
+        <div id="chatMessages"></div>
+        <div id="quickReplies"></div>
+        <div id="typingIndicator" style="display:none;">Typing...</div>
+        <div id="emptyState">No messages yet!</div>
+    </div>
+    <script>
+        // JavaScript for authentication, signin, signup
+        function signin() {
+            // Signin logic
+        }
+        function signup() {
+            // Signup logic
+        }
+        // Chat functionality with Claude API
+        function sendMessage() {
+            // Sending a message logic
+        }
+        // Breathing exercises with 4-7-8 and box modes
+        function startBreathingExercise(mode) {
+            // Breathing exercises logic
+        }
+        // Ambient sounds with Web Audio API
+        function playAmbientSound() {
+            // Play sound logic
+        }
+        // Diary with mood tracking
+        function trackMood() {
+            // Mood tracking logic
+        }
+        // Bilingual translations
+        function translate(text) {
+            // Translation logic
+        }
+        // Overlay modals for breathing exercises, sounds
+        function showModal() {
+            // Show modal logic
+        }
+        // Animations and interactivity
+        function animate() {
+            // Animation logic
+        }
+    </script>
 </body>
 </html>
